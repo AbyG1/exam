@@ -1,5 +1,3 @@
-//register
-
 let registerName = document.querySelector('#r-username')
 let registerPassword = document.querySelector('#r-password')
 
@@ -29,7 +27,7 @@ function registerUser() {
     
             registerPassword.value = ''
         alert("Account created successfully")
-        window.location = 'product.html'
+        window.location = 'index.html'
              
         
             
@@ -59,7 +57,7 @@ function login(){
                 if(password === user.userPassword){
                     alert("login successful")
                     localStorage.setItem('dname',user.userName)
-                    window.location="home.html"
+                    window.location="product.html"
                 } else {
                     alert("incorrect password")
                     loginPassword.value = '';
@@ -82,14 +80,12 @@ function login(){
 function addProduct() {
     let pid = document.querySelector('#pid')
     let pname = document.querySelector('#pname')
-    let pcategory = document.querySelector('#pid')
-    let pdescription = document.querySelector('#pid')
-    let prate = document.querySelector('#pid')
+    let pcategory = document.querySelector('#pcat')
+    let pdescription = document.querySelector('#pdes')
+    let prate = document.querySelector('#prate')
+    let preview = document.querySelector('#rev')
 
 
-
-    // let userName = registerName.value
-    // let userPassword = registerPassword.value
 
     // const user = {
     //     userName,
